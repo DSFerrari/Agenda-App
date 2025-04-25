@@ -1,12 +1,13 @@
 export default{
     COLORS: {
-        COR_FUNDO: '#F5F5F5',
+        COR_FUNDO: '#EDEDED',
         COR_INPUT: '#D9D9D9',
         COR_BOTAO: '#007A5E',
         COR_SUBTITULO: '#4F4F4F',
         COR_TITULO: '#000000',
         COR_TEXTO_BOTAO: '#FFFFFF',
-        COR_DIA_SELECIONADO: '#327340'
+        COR_DIA_SELECIONADO: '#327340',
+        COR_SETA_VOLTAR: '#1D1B20'
 
     },
     FONT_FAMILY:{

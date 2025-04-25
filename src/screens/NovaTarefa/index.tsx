@@ -1,9 +1,10 @@
-import { View } from "react-native";
+import { Header } from "@components/Header";
+import { Container } from "./theme";
 
 export function NovaTarefa(){
     return(
-        <View>
-            
-        </View>
+    <Container>
+    <Header showBackButton />
+    </Container>
     );
 }
