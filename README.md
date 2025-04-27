@@ -1,47 +1,56 @@
-📋 Tarefas por Tema
-Um aplicativo de tarefas desenvolvido em React Native, que organiza suas atividades por temas e dias da semana! 📅
+# 📋 Tarefas por Tema
 
-✨ Funcionalidades
-Criar temas para organizar tarefas.
+**Um aplicativo de tarefas desenvolvido em React Native, que organiza suas atividades por temas e dias da semana!** 📅
 
-Criar tarefas dentro de um tema específico.
+# ✨ Funcionalidades
 
-Selecionar em quais dias da semana a tarefa será realizada.
+**Criar temas para organizar tarefas.**
 
-Interface simples e intuitiva.
+**Criar tarefas dentro de um tema específico.**
 
-🖼️ Screenshots
+**Selecionar em quais dias da semana a tarefa será realizada.**
+
+**Interface simples e intuitiva.**
+
+# 🖼️ Screenshots
 
 ![image](https://github.com/user-attachments/assets/74b6eb60-0847-4045-a075-468871f15d0b)
 
 
-🚀 Tecnologias
-React Native
-Expo
-React Navigation
-AsyncStorage
-Styled-Components
+# 🚀 Tecnologias
+
+**React Native**  
+
+**Expo**
+
+**React Navigation**
+
+**AsyncStorage**
+
+**Styled-Components**
 
 
-🛠️ Como rodar o projeto
+# 🛠️ Como rodar o projeto
 
-Clone este repositório:
+**Clone este repositório:**
+
 git clone [https://github.com/DSFerrari/Agenda-App.git]
 
-Instale as dependências:
+**Instale as dependências:**
 npm install
 
-Inicie o projeto:
+**Inicie o projeto:**
 expo start
 
-Use um emulador ou seu celular com o app do Expo para visualizar!
+**Use um emulador ou seu celular com o app do Expo para visualizar!**
 
-📌 Melhorias futuras
-Sistema de notificações para lembrar das tarefas.
+# 📌 Melhorias futuras
 
-Possibilidade de editar temas/tarefas.
+**Sistema de notificações para lembrar das tarefas.**
 
-Design mais personalizado para cada tema.
+**Possibilidade de editar temas/tarefas.**
+
+**Design mais personalizado para cada tema.**
 
 📄 Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
