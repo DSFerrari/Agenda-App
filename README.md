@@ -12,9 +12,7 @@ Interface simples e intuitiva.
 
 🖼️ Screenshots
 
-![image](https://github.com/user-attachments/assets/40d955d3-aeee-46d8-b308-689aff08bb0e)
-![image](https://github.com/user-attachments/assets/222ab34d-01fe-43a1-a6db-a53bf4bf7eed)
-![image](https://github.com/user-attachments/assets/9ff25f74-aa4d-4999-be2d-4d05e11e3c98)
+![image](https://github.com/user-attachments/assets/74b6eb60-0847-4045-a075-468871f15d0b)
 
 
 🚀 Tecnologias
