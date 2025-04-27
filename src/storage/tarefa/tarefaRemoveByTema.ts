@@ -2,7 +2,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { TAREFA_COLLECTION } from "@storage/storageconfig";
 import { tarefasGetByTema } from "./tarefasGetByTema";
 
-export async function tarefaRemoveByTema(tema: string, tarefaName: string) {
+export async function tarefaRemoveByTema(tarefaName: string, tema: string) {
     try{
         const storage = await tarefasGetByTema(tema);
         const filtrado = storage.filter(tarefa => tarefa.name !== tarefaName);

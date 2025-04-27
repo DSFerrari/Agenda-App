@@ -12,18 +12,18 @@ import { temasGetAll } from "@storage/tema/temasGetAll";
 
 export function Inicial(){
     const[isLoading, setIsLoading] = useState(true);
-    const [groups, setGroups] = useState<string[]>([]);
+    const [temas, setTemas] = useState<string[]>([]);
     
     const Navigation = useNavigation();
     function handleNewGroup(){
-        Navigation.navigate('tema');
+        Navigation.navigate('novotema');
     }
 
     async function fetchTemas() {
         try{
             setIsLoading(true);
             const data = await temasGetAll();
-            setGroups(data);
+            setTemas(data);
         }catch (error) {
             console.log(error);
         }
@@ -33,8 +33,8 @@ export function Inicial(){
 }
 
 
-    function handleOpenTheme(inicio: string){
-        Navigation.navigate('tarefa', {inicio});
+    function handleOpenTheme(tema: string){
+        Navigation.navigate('tarefa', {tema});
     
     }
 
@@ -45,13 +45,14 @@ export function Inicial(){
        <Container>
         <Header/>
         <Highlight
+        showlogo
         title="Tarefas"
         subTitle="Crie Suas Tarefas por temas"
         logotype="um"
         />
         {isLoading ? <Loading/> :
         <FlatList
-        data={groups}
+        data={temas}
         keyExtractor={item => item}
         renderItem={({ item }) => (
         <ThemeCard 
@@ -59,7 +60,7 @@ export function Inicial(){
         onPress={() => handleOpenTheme(item)}
         />
         )}
-        contentContainerStyle={groups.length === 0 && { flex: 1 }}
+        contentContainerStyle={temas.length === 0 && { flex: 1 }}
         ListEmptyComponent={() => (<ListEmpty message="Nenhum tema cadastrado" />)}
         showsVerticalScrollIndicator={false}
         />

@@ -10,16 +10,16 @@ import { Input } from "@components/Input";
 import { Button } from "@components/Buttons";
 
 export function NovoTema(){
-const [inicio, setGroup] = useState('');
+const [tema, setTema] = useState('');
       const navigation = useNavigation();
 
 async function handleNovoTema() {
     try{
-        if(inicio.trim().length === 0){
+        if(tema.trim().length === 0){
             return Alert.alert('Novo Tema', 'Informe o nome do tema');
         }
-        await temaCreate(inicio);
-    navigation.navigate('tarefa', {inicio});
+        await temaCreate(tema);
+    navigation.navigate('tarefa', {tema});
     }catch (error) {
         if(error instanceof AppError){
         Alert.alert('Novo Tema', error.message);
@@ -35,13 +35,14 @@ async function handleNovoTema() {
         <Header showBackButton />
         <Content>
         <Highlight
+        showlogo
         logotype="dois"
         title="Temas"
         subTitle="Crie um novo tema"
         />
         <Input
         placeholder="tema"
-        onChangeText={setGroup}
+        onChangeText={setTema}
         />
         <Button
         title="Criar"

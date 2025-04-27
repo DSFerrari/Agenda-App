@@ -1,16 +1,18 @@
 import { useNavigation } from "@react-navigation/native";
-import { Container,Logo,BackIcon,BackButton } from "./styles";
+import { Container,Cancel,BackIcon,BackButton,CancelIcon } from "./styles";
 
 
 type Props = {
     showBackButton?: boolean;
+    showCancelButton?: boolean;
+    onCancel?: () => void;
 }
 
-export function Header({ showBackButton = false }: Props) {
+export function Header({ showBackButton = false, showCancelButton = false, onCancel }: Props) {
 const Navigation = useNavigation();
 
 function handleGoBack() {
-    Navigation.navigate('inicial');
+    Navigation.navigate('temas');
 }
 
 return (
@@ -19,8 +21,13 @@ return (
             <BackButton onPress={handleGoBack}> 
                 <BackIcon />
             </BackButton>
+
     }
-   
+        {showCancelButton &&
+        <Cancel onPress={onCancel}>
+            <CancelIcon/>
+        </Cancel>
+}
     </Container>
     );
 }

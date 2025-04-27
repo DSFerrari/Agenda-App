@@ -7,14 +7,14 @@ export type FilterStyleProps = {
 
 export const Container = styled(TouchableOpacity)<FilterStyleProps>`
     ${({theme, isActive}) => isActive && css`
-    border: 1px solid ${theme.COLORS.COR_DIA_SELECIONADO};
+    border: 2px solid ${theme.COLORS.COR_DIA_SELECIONADO};
     `};
 
-    border-radius: 4px;
-    margin-right: 12px;
+    border-radius: 2px;
+    
 
     height: 38px;
-    width: 70px;
+    width: 50px;
 
     align-items: center;
     justify-content: center;

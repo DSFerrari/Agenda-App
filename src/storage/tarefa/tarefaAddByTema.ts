@@ -4,7 +4,7 @@ import { TAREFA_COLLECTION } from "@storage/storageconfig";
 import { tarefasGetByTema } from "./tarefasGetByTema";
 import { TarefaStorageDTO } from "./TarefaStorageDTO";
 
-export async function tarefaAddByTema(tema: string, tarefa: TarefaStorageDTO) {
+export async function tarefaAddByTema(tarefa: TarefaStorageDTO,tema: string) {
     try {
         const storage = await tarefasGetByTema(tema);
         const tarefaExistente = storage.find(t => t.name === tarefa.name);

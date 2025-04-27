@@ -9,7 +9,7 @@ export function AppRoutes(){
     return(
         <Navigator screenOptions={{headerShown: false}}>
             <Screen
-            name='inicial'
+            name='temas'
             component={Inicial}
             />
             <Screen
@@ -17,7 +17,7 @@ export function AppRoutes(){
             component={NovaTarefa}
             />
             <Screen
-            name='tema'
+            name='novotema'
             component={NovoTema}
             />
         </Navigator>

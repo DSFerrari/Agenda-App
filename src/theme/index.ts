@@ -7,7 +7,11 @@ export default{
         COR_TITULO: '#000000',
         COR_TEXTO_BOTAO: '#FFFFFF',
         COR_DIA_SELECIONADO: '#327340',
-        COR_SETA_VOLTAR: '#1D1B20'
+        COR_SETA_VOLTAR: '#1D1B20',
+        COR_EXCLUIR: '#D32F2F',
+        COR_ADICIONAR_TAREFA: '#362C39',
+        COR_TAREFA_FINALIZADA: '#2E7D32'
+
 
     },
     FONT_FAMILY:{
