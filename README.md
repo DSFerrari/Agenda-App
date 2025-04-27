@@ -52,5 +52,5 @@ expo start
 
 **Design mais personalizado para cada tema.**
 
-📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+# 📄 Licença
+**Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/DSFerrari/Agenda-App/blob/main/LICENSE) para mais detalhes.**
